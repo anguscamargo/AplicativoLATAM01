@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorSecondary"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        tools:layout_editor_absoluteY="72dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp">
+
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            tools:context="com.example.latam.activities.RatingScreen">
+
+                <TextView
+                    android:id="@+id/cabecalhoRatingScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="@string/cabecalhoRatingScreen"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="30dp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/question1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:text="@string/question1"
+                    />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rating_bar01"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:progressTint="#FFC107"
+                    android:progressBackgroundTint="#C1C0BA"
+                    />
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/question2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:text="@string/question2"
+                    />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rating_bar02"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:progressTint="#FFC107"
+                    android:progressBackgroundTint="#C1C0BA"
+                    />
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/question3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:text="@string/question3"
+                    />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rating_bar03"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:progressTint="#FFC107"
+                    android:progressBackgroundTint="#C1C0BA"
+                    />
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/question4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:text="@string/question4"
+                    />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rating_bar04"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:progressTint="#FFC107"
+                    android:progressBackgroundTint="#C1C0BA"
+                    />
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/question5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:text="@string/question5"
+                    />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rating_bar05"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:progressTint="#FFC107"
+                    android:progressBackgroundTint="#C1C0BA"
+                    />
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/txtComentarios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:text="Comentário:"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+            <EditText
+                android:id="@+id/editTextComentarios"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_rounded_border"
+                />
+
+            <Button
+                android:id="@+id/openCamera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="18dp"
+                android:text="Tirar foto"
+            />
+
+            <ImageView
+                android:id="@+id/capturedImage"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+            />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
