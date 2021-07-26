@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pets">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.latam.activities.Signature"></activity>
+        <activity android:name="com.example.latam.activities.StartActivity" />
+        <activity android:name="com.example.latam.activities.RatingScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.latam.activities.UploadPhoto" />
+        <activity android:name="com.example.latam.activities.LoginActivity" />
+        <activity android:name="com.example.latam.activities.MainMenuActivity" />
+        <activity android:name="com.example.latam.activities.users.UserNewActivity" />
+        <activity android:name="com.example.latam.activities.users.UsersActivity" />
+        <activity android:name="com.example.latam.activities.users.UserShowActivity" />
+        <activity android:name="com.example.latam.activities.users.UserEditActivity" />
+        <activity android:name="com.example.latam.activities.clients.ClientNewActivity" />
+        <activity android:name="com.example.latam.activities.clients.ClientsActivity" />
+        <activity android:name="com.example.latam.activities.clients.ClientShowActivity" />
+        <activity android:name="com.example.latam.activities.clients.ClientEditActivity" />
+        <activity android:name="com.example.latam.activities.airports.AirportNewActivity" />
+        <activity android:name="com.example.latam.activities.airports.AirportsActivity" />
+        <activity android:name="com.example.latam.activities.airports.AirportShowActivity" />
+        <activity android:name="com.example.latam.activities.airports.AirportEditActivity" />
+        <activity android:name="com.example.latam.activities.pets.PetNewActivity" />
+        <activity android:name="com.example.latam.activities.pets.PetsActivity" />
+        <activity android:name="com.example.latam.activities.pets.PetShowActivity" />
+        <activity android:name="com.example.latam.activities.pets.PetEditActivity" />
+    </application>
+
+</manifest>
