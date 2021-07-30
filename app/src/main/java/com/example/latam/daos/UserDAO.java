@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.widget.Toast;
 
+import com.example.latam.daos.seeds.UsersSeeds;
 import com.example.latam.models.User;
 import com.example.latam.factories.DatabaseFactory;
 import com.example.latam.utils.Connection;
@@ -22,7 +23,7 @@ public class UserDAO {
     public UserDAO(Context context) {
         this.context = context;
         database = Connection.getInstance(context);
-//        UsersSeeds.install(this);
+        //UsersSeeds.install(this); //deixar comentado
     }
 
     public void insert(User user) {

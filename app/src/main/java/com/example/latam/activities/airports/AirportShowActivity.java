@@ -1,14 +1,14 @@
 package com.example.latam.activities.airports;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.latam.daos.AirportDAO;
-import com.example.latam.enums.Category;
+import com.example.latam.enums.Roles;
 import com.example.latam.models.Airport;
 import com.example.pets.R;
 
@@ -25,6 +25,8 @@ public class AirportShowActivity extends AppCompatActivity {
         airport = airportDAO.find(getIntent().getExtras().getInt("id"));
 
         textHeader = findViewById(R.id.textHeader);
+        textShowInitials = findViewById(R.id.textShowInitials);
+        textShowUf = findViewById(R.id.textShowUf);
 
         textHeader.setText(airport.getInitials());
         textShowInitials.setText(String.valueOf(airport.getInitials()));

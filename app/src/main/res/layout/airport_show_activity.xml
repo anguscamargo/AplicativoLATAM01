@@ -48,7 +48,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/imageProductIcon"
+                android:id="@+id/imageAirportIcon"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_gravity="center_horizontal|center_vertical"
@@ -75,7 +75,24 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageProductIcon">
+                app:layout_constraintTop_toBottomOf="@+id/imageAirportIcon">
+
+                <TextView
+                    android:id="@+id/textInitials"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/initials"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textShowInitials"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorTextSecondaryDarker" />
 
                 <TextView
                     android:id="@+id/textUf"

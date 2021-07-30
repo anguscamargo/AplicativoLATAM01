@@ -135,6 +135,7 @@
             android:layout_height="100dp"
             android:layout_marginTop="48dp"
             android:background="@android:color/transparent"
+            android:onClick="goToStartActivity"
             android:scaleType="fitCenter"
             app:layout_constraintEnd_toEndOf="@+id/buttonClients"
             app:layout_constraintStart_toStartOf="@+id/buttonClients"

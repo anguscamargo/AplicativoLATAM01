@@ -11,11 +11,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.latam.activities.MainMenuActivity;
-import com.example.latam.activities.users.UserNewActivity;
+import com.example.latam.activities.StartActivity;
+import com.example.latam.activities.users.UsersActivity;
 import com.example.latam.daos.AirportDAO;
 import com.example.latam.models.Airport;
-import com.example.latam.utils.AirportListAdapter;
 import com.example.pets.R;
+import com.example.latam.utils.AirportListAdapter;
 
 import java.util.List;
 
@@ -28,8 +29,8 @@ public class AirportsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.airports_activity);
-        TextView textHeader = findViewById(R.id.textAirports);
-        //textHeader.setText(R.string.airport);
+        TextView textHeader = findViewById(R.id.textHeader);
+        textHeader.setText(R.string.airports);
 
 
         airportDAO = new AirportDAO(this);
@@ -46,6 +47,12 @@ public class AirportsActivity extends AppCompatActivity {
 
     public void goToNewAirport(View view) {
         startActivity(new Intent(this, AirportNewActivity.class));
+    }
+
+    public void goToDeliveries(View view, int airportID) {
+        Intent intent = new Intent(this, UsersActivity.class);
+        intent.putExtra("id", airportID);
+        startActivity(intent);
     }
 
     public void edit(View view, int airportID) {

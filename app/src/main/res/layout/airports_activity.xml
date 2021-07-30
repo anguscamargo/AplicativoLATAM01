@@ -69,7 +69,7 @@
         android:foregroundGravity="center"
         android:onClick="goToNewAirport"
         android:scaleType="centerInside"
-        android:src="@drawable/icon_airport01"
+        android:src="@drawable/icon_airport02"
         app:layout_constraintBottom_toBottomOf="@+id/recyclerListAirports"
         app:layout_constraintEnd_toEndOf="@+id/recyclerListAirports"
         />

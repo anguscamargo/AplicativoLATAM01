@@ -1,7 +1,7 @@
 package com.example.latam.enums;
 
 public enum Roles {
-    SALESMAN(1), VET(2), MANAGER(3), SUPPLIER(4), DIRECTOR(5), PRESIDENT(6), INVESTOR(7);
+    MANAGER(0), SUPPLIER(1), DIRECTOR(2), PRESIDENT(3);
 
     public int value;
 
@@ -12,21 +12,15 @@ public enum Roles {
     public static String stringfy(int index){
         switch(index){
             case 1:
-                return "Atendente";
+                return "Analista";
 
             case 2:
-                return "Veterinário";
-
-            case 3:
                 return "Gerente";
 
-            case 4:
-                return "Estoquista";
-
-            case 5:
+            case 3:
                 return "Diretor";
 
-            case 6:
+            case 4:
                 return "Presidente";
         }
         return  null;

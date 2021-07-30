@@ -63,7 +63,7 @@ public class UsersActivity extends AppCompatActivity {
         if (userDAO.delete(userID)) {
             Toast.makeText(this, "Usuário id: " + userID + " removido com sucesso!", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(this, "Erro na execução desta remoção do usuário!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Erro z execução desta remoção do usuário!", Toast.LENGTH_SHORT).show();
         }
         startActivity(new Intent(this, UsersActivity.class));
     }

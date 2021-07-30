@@ -27,7 +27,7 @@
     <string name="edit_airport">Editar Aeroporto</string>
     <string name="list_airport">Lista de Aeroporto</string>
     <string name="airport_availablility">Diponível</string>
-    <string name="sigla">Sigla</string>
+    <string name="initials">Sigla</string>
     <string name="uf">UF</string>
     <!-- (((FIM AIRPORTS))) -->
 
@@ -59,13 +59,10 @@
     <string name="back">Voltar</string>
 
     <string-array name="role_array">
-        <item>Atendimento</item>
-        <item>Veterinário</item>
+        <item>Analista</item>
         <item>Gerente</item>
-        <item>Estoquista</item>
         <item>Diretor</item>
-        <item>President</item>
-        <item>Investidor</item>
+        <item>Presidente</item>
     </string-array>
 
     <string-array name="category_array">

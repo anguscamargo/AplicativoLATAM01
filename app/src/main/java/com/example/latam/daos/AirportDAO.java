@@ -8,8 +8,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.widget.Toast;
 
-import com.example.latam.factories.DatabaseFactory;
+import com.example.latam.daos.seeds.AirportSeeds;
 import com.example.latam.models.Airport;
+import com.example.latam.factories.DatabaseFactory;
 import com.example.latam.utils.Connection;
 
 import java.util.ArrayList;
@@ -22,7 +23,7 @@ public class AirportDAO {
     public AirportDAO(Context context) {
         this.context = context;
         database = Connection.getInstance(context);
-//        AirportsSeeds.install(this);
+        //AirportSeeds.install(this); //deixar comentado
     }
 
     public void insert(Airport airport) {

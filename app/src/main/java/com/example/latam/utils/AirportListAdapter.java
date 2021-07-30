@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.latam.activities.airports.AirportsActivity;
+import com.example.latam.enums.Roles;
 import com.example.latam.models.Airport;
 import com.example.pets.R;
 
@@ -35,7 +36,7 @@ public class AirportListAdapter extends RecyclerView.Adapter<AirportListAdapter.
     @Override
     public void onBindViewHolder(@NonNull AirportListAdapter.ViewHolder holder, int position) {
         holder.textInitials.setText(airports.get(position).getInitials());
-        holder.textUf.setText(airports.get(position).getUf());
+        holder.textUf.setText(String.valueOf(airports.get(position).getUf()));
         holder.airportID = airports.get(position).getId();
     }
 
@@ -47,13 +48,11 @@ public class AirportListAdapter extends RecyclerView.Adapter<AirportListAdapter.
     class ViewHolder extends RecyclerView.ViewHolder {
         private int airportID;
         private TextView textInitials, textUf;
-        private TextView textRole;
-        private TextView textPhone;
 
         @SuppressLint("CutPasteId")
         ViewHolder(@NonNull View itemView) {
             super(itemView);
-            textInitials = itemView.findViewById(R.id.textName);
+            textInitials = itemView.findViewById(R.id.textInitials);
             textUf = itemView.findViewById(R.id.textUf);
 
             TextView textDetails = itemView.findViewById(R.id.textDetails);

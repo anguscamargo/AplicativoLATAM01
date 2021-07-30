@@ -17,9 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.latam.daos.AirportDAO;
-import com.example.latam.daos.UserDAO;
 import com.example.latam.models.Airport;
-import com.example.latam.models.User;
 import com.example.pets.R;
 
 public class AirportNewActivity extends AppCompatActivity {
@@ -33,8 +31,6 @@ public class AirportNewActivity extends AppCompatActivity {
         editInitials = findViewById(R.id.editInitials);
         editUf = findViewById(R.id.editUf);
         airportDAO = new AirportDAO(this);
-
-
     }
 
     // TODO método para escurecer o fundo do input quando este estiver com focus

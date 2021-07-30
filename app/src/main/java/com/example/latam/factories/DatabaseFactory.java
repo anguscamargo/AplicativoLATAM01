@@ -35,6 +35,7 @@ public class DatabaseFactory extends SQLiteOpenHelper {
         try {
         String sql = "CREATE TABLE IF NOT EXISTS user (" +
                 "id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "airport CHAR(3) NOT NULL," +
                 "name VARCHAR(25) NOT NULL," +
                 "surname VARCHAR(25) NOT NULL," +
                 "CPF BIGINT NOT NULL UNIQUE, " +
@@ -62,9 +63,7 @@ public class DatabaseFactory extends SQLiteOpenHelper {
             String sql = "CREATE TABLE IF NOT EXISTS airport (" +
                     "id INTEGER PRIMARY KEY AUTOINCREMENT," +
                     "initials VARCHAR(25) NOT NULL," +
-                    "category TINYINT NOT NULL," +
-                    "quantity TINYINT NOT NULL," +
-                    "price DECIMAL NOT NULL);";
+                    "uf char(2) NOT NULL)";
             database.execSQL(sql);
         } catch (SQLiteException e) {
             e.printStackTrace();

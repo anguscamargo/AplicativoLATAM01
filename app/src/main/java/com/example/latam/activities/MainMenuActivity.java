@@ -25,4 +25,8 @@ public class MainMenuActivity extends AppCompatActivity {
     public void goToAirports(View view) {
         startActivity(new Intent(this, AirportsActivity.class));
     }
+
+    public void goToStartActivity(View view) {
+        startActivity(new Intent(this, StartActivity.class));
+    }
 }
